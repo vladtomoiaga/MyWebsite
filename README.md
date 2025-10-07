@@ -20,7 +20,6 @@ This small website show with what technologies I worked.
 The user can find more information about myself.
 In the end the user can send a short message to mine via the Contact form.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built with
@@ -31,7 +30,6 @@ In this section you will find the important technologies for this project.
 * Flask
 * Bootstrap
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -45,14 +43,13 @@ Below is how you can install and setting up the website.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/vladtomoiaga/repo_name.git
+   git clone https://github.com/vladtomoiaga/MyWebsite.git
    ```
 2. Install requirements
    ```sh
    pip install -r requirements.txt
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -63,6 +60,3 @@ Below is how you can install and setting up the website.
 * In the first tab (Vlad), the user can find with what technologies I worked.
 * In the About tab, the user can find my resume.
 * In the final tab, Contact tab, the user can send a message via the Contact form.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
