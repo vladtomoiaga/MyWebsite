@@ -1,0 +1,50 @@
+{% include "header.html" %}
+
+<body>
+<!-- Contact -->
+<article id="contact" class="wrapper style3">
+    <div class="container medium">
+        <header>
+            <h2>Contact</h2>
+            <p>For more information please fill out the form below</p>
+        </header>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <form method="POST" action="{{ url_for('routes.contact') }}" class="text-center" novalidate>
+                        {{ form.csrf_token }}
+                        <p>{{ form.name.label }}
+                            {{ form.name(size=30) }}
+                            {% for err in form.name.errors %}
+                            <span style="color:red">{{ err }}</span>
+                            {% endfor %}
+                        </p>
+                        <p>{{ form.email.label }}
+                            {{ form.email(size=30) }}
+                            {% for err in form.email.errors %}
+                            <span style="color:red">{{ err }}</span>
+                            {% endfor %}
+                        </p>
+                        <p>{{ form.subject.label }}
+                            {{ form.subject(size=30) }}
+                            {% for err in form.subject.errors %}
+                            <span style="color:red">{{ err }}</span>
+                            {% endfor %}
+                        </p>
+                        <p>{{ form.message.label }}
+                            {{ form.message(size=300) }}
+                            {% for err in form.message.errors %}
+                            <span style="color:red">{{ err }}</span>
+                            {% endfor %}
+                        </p>
+                        {{form.submit}}
+                        {{form.delete}}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+</body>
+
+{% include "footer.html" %}
