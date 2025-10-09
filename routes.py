@@ -3,7 +3,7 @@ import smtplib
 
 from dotenv import load_dotenv
 from datetime import datetime
-from flask import Blueprint, redirect, url_for, render_template, request
+from flask import Blueprint, redirect, url_for, render_template
 from forms import ContactForm
 
 routes = Blueprint("routes", __name__)
