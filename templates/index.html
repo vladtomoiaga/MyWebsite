@@ -1,6 +1,6 @@
-{% include "header.html" %}
+{% extends "base.html" %}
+{% block content %}
 
-<body class="is-preload">
 <!-- Home -->
 <article id="top" class="wrapper style2">
     <div class="container">
@@ -88,14 +88,4 @@
     </div>
 </article>
 
-<!-- Scripts -->
-<script src="static/assets/js/jquery.min.js"></script>
-<script src="static/assets/js/jquery.scrolly.min.js"></script>
-<script src="static/assets/js/browser.min.js"></script>
-<script src="static/assets/js/breakpoints.min.js"></script>
-<script src="static/assets/js/util.js"></script>
-<script src="static/assets/js/main.js"></script>
-
-</body>
-
-{% include "footer.html" %}
+{% endblock %}

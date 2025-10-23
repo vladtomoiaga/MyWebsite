@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    {% block styles %}
+    <!-- Load Bootstrap-Flask CSS here -->
+    {{ bootstrap.load_css() }}
+    <!-- Link to the styles.css here to apply styling to all the child templates.-->
+    {% endblock %}
+    <link rel="stylesheet" href="static/assets/css/main.css"/>
+</head>
+
+<body>
+<!-- Nav -->
+<nav id="nav">
+    <ul class="container">
+        <li><a href="{{ url_for('routes.home')}}">Vlad</a></li>
+        <li><a href="{{ url_for('routes.about')}}">About</a></li>
+        <li><a href="{{ url_for('routes.contact')}}">Contact</a></li>
+    </ul>
+</nav>
+
+{% block content %}{% endblock %}
+<!-- Scripts -->
+<script src="static/assets/js/jquery.min.js"></script>
+<script src="static/assets/js/jquery.scrolly.min.js"></script>
+<script src="static/assets/js/browser.min.js"></script>
+<script src="static/assets/js/breakpoints.min.js"></script>
+<script src="static/assets/js/util.js"></script>
+<script src="static/assets/js/main.js"></script>
+
+</body>
+
+<!-- Footer-->
+<footer class="border-top">
+    <div class="container px-4 px-lg-5 text-center">
+        <h3>Find me on ...</h3>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/vlad-tomoiagă-451062100" target="_blank"
+                   class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/vladtomoiaga" target="_blank" class="icon brands fa-github"><span
+                    class="label">Github</span></a></li>
+        </ul>
+        <br>
+        <ul id="copyright">
+            <li>&copy; {{ current_year }} Untitled.</li>
+        </ul>
+    </div>
+</footer>
+
+</html>
